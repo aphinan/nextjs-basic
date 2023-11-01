@@ -1,6 +1,6 @@
 'use client'
 import React ,{useState, useEffect} from 'react'
-import { getTasks } from '../api/data'
+import { getTasks } from './data' 
 
 export default async function USER() {
 
@@ -20,7 +20,7 @@ export default async function USER() {
               <br/>
               {attraction.detail}
               <br/>
-              <a href={`/user/${attraction.id}`}>
+              <a href={`/attractions/${attraction.id}`}>
                 Detail
               </a>
           </li>

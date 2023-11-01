@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { mysqlPool } from "../Config/db";
+import { mysqlPool } from "@/Config/db";
 
 export async function GET(req, res) {
 
@@ -10,5 +10,3 @@ export async function GET(req, res) {
 
   return NextResponse.json(rows)
 }
-
-
